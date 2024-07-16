@@ -6,6 +6,7 @@ import Signup from './pages/Signup.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Signup />
+    {/* <Signup /> */}
+    <App/>
   </React.StrictMode>,
 )
