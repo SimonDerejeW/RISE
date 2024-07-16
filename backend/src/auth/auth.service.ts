@@ -4,10 +4,6 @@ import { Model } from 'mongoose';
 import { User } from 'src/schemas/user.schema';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
-
-import { validate } from 'class-validator';
-
-import { HttpException, HttpStatus } from '@nestjs/common';
 import { SignUpDto } from './dto/signup.auth.dto';
 import { LoginDto } from './dto/login.auth.dto';
 
@@ -48,7 +44,7 @@ export class AuthService {
 
   async login(
     loginDto: LoginDto,
-  ): Promise<{ access_token: string; roles: any; owner: any }> {
+  ): Promise<{ access_token: string; roles: any; id: any }> {
     const { username, password } = loginDto;
 
     const user = await this.userModel.findOne({ username });
@@ -73,7 +69,7 @@ export class AuthService {
     return {
       access_token: await this.jwtService.signAsync(payload),
       roles: payload['roles'],
-      owner: payload['sub'],
+      id: payload['sub'],
     };
   }
 
