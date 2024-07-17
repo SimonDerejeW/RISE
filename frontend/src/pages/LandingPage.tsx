@@ -1,11 +1,23 @@
-import NavBar from "../components/NavBar"
+import NavBar from "../components/NavBar";
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="container">
+      <header>
         <NavBar />
-    </div>
-  )
-}
+      </header>
+      <main>
+        <div>
+            <div>
 
-export default LandingPage
+            </div>
+            <div>
+                <img src="" alt="" />
+            </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default LandingPage;
