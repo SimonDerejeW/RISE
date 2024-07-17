@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-
+import image from "../images/bennett-tobias-tqwOJAvUIh4-unsplash.jpg"
 const LandingPage = () => {
   return (
     <div className="container">
@@ -11,8 +11,8 @@ const LandingPage = () => {
             <div>
 
             </div>
-            <div>
-                <img src="" alt="" />
+            <div className="rounded-lg ">
+                <img src="image" alt="" />
             </div>
         </div>
       </main>
