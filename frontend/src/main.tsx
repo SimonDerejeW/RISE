@@ -1,16 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Signup from './pages/Signup.tsx'
-import UpcomingEventCard from './components/UpcomingEventCard.tsx'
-import PreviousEventCard from './components/PreviousEventCard.tsx'
-import Login from './pages/Login.tsx'
+import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-
-    
-    <App/>
-
+    <App />
   </React.StrictMode>,
 )
