@@ -8,11 +8,9 @@ import Login from './pages/Login.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <div>
-      <UpcomingEventCard />
-      <PreviousEventCard/>
-      <Signup/>
-      <Login/>
-    </div>
+
+    
+    <App/>
+
   </React.StrictMode>,
 )
