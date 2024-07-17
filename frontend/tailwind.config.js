@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        riseblue: ['#074CE7']
+
+      },
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
